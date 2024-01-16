@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Article preview component</title>
+
+
+</head>
+
+<body>
+  <main>
+    <img class="bg-img" src="images\drawers.jpg" alt="">
+    <div class="about-component">
+      <h1>
+        Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home
+      </h1>
+      <p>
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make aimgny room feel complete.
+      </p>
+      <div class="about-people d-flex">
+        <div class="d-flex">
+          <img class="avtar-img" src="images\avatar-michelle.jpg" alt="">
+          <div>
+            <h5>
+              Michelle Appleton
+            </h5>
+            <span>
+              <p>
+                28 Jun 2020
+              </p>
+            </span>
+          </div>
+        </div>
+        <div class="share-box">
+          <img id="share-img" onclick="showbtn()" class="icon-share" src="images\icon-share.svg" alt="">
+          <div id="share-box" class="dynamic-btn d-none">
+            <div class="share-btn">
+              <h5>
+                Share
+              </h5>
+              <img src="images\icon-facebook.svg" alt="">
+              <img src="images\icon-twitter.svg" alt="">
+              <img src="images\icon-pinterest.svg" alt="">
+            </div>
+            <div class="triangle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    const shareBox = document.getElementById("share-box");
+    const shareBtn = document.getElementById("share-img");
+    function showbtn() {
+      shareBtn.addEventListener("click", () => {
+        showbtn()
+        shareBox.classList.toggle("d-none")
+        console.log("hello")
+      })
+    }
+  </script>
+
+
+</body>
+
+</html>

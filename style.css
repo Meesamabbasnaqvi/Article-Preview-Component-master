@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    background-color: hsl(180, 2%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.bg-img {
+    border-radius: 10px 0 0 10px;
+    height: 300px;
+    width: 300px;
+    margin-right: -5%;
+    box-shadow: 10px 10px 10px grey;
+
+}
+
+h1 {
+    color: hsl(214, 17%, 51%);
+    font-size: 30px;
+}
+
+.about-component {
+    padding: 35px;
+    height: 300px;
+    width: 450px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.about-component p {
+    color: hsl(214, 17%, 51%);
+
+}
+
+.about-people {
+    margin-top: 15px;
+}
+
+span p {
+    color: hsl(212, 23%, 69%);
+}
+
+.avtar-img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+
+}
+
+.share-box {
+    position: relative;
+}
+
+.icon-share {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: hsl(0, 2%, 87%);
+
+
+}
+
+.share-btn {
+    background-color: rgb(59, 57, 57);
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 10px 5px 10px 15px;
+    border-radius: 5px;
+    color: hsl(212, 23%, 69%);
+    width: 200px;
+}
+
+.d-none {
+    display: none;
+}
+
+.dynamic-btn {
+    position: absolute;
+    top: -50px;
+    left: -75px;
+    width: 200px;
+
+}
+
+.share-btn img {
+    margin: 0px 5px;
+}
+
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(59, 57, 57);
+    position: absolute;
+    right: 50%;
+}
+
+.icon-share:hover {
+    background-color: rgb(212, 209, 209);
+}
+
+@media(max-width: 768px) {
+    main {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        height: 100%;
+    }
+
+    .bg-img {
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .about-component {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 8px;
+        margin: 10px 0 10px 0;
+    }
+
+    span p {
+        margin: 0;
+    }
+
+    .icon-share {
+        margin-right: -20px;
+        position: relative;
+        z-index: 999;
+        width: 30px;
+        margin-top: 5px;
+    }
+
+    .avtar-img {
+        width: 30px;
+    }
+
+    .share-btn {
+        margin-top: 50px;
+        width: 330px;
+        display: flex;
+        align-items: center;
+        padding: 10px 45px 10px 10px;
+        margin-left: -110%;
+
+    }
+
+    .triangle {
+        display: none;
+
+    }
+
+    .dynamic-btn img {
+        width: 10px;
+        height: 10px;
+    }
+}
